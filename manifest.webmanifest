@@ -1,0 +1,10 @@
+{
+  "name": "AMAKA AI Zambia Business Desk",
+  "short_name": "AMAKA AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#10100f",
+  "theme_color": "#11110f",
+  "description": "PACRA and ZRA voice-first service assistant prototype",
+  "icons": []
+}

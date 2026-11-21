@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11110f"><meta name="description" content="AMAKA AI Zambia Business and Tax Services prototype">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<title>AMAKA AI | Zambia Business Desk</title>
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+ <div class="brand"><div class="brandmark">A</div><div><strong>AMAKA AI</strong><small>ZAMBIA BUSINESS DESK</small></div></div>
+ <div class="prototype-pill"><i></i> PROTOTYPE</div>
+</header>
+<main>
+<section class="hero">
+ <div class="eyebrow">YOUR BUSINESS. SIMPLIFIED.</div>
+ <h1>Government services,<br><em>just a conversation away.</em></h1>
+ <p>Talk naturally. Get guided through PACRA business registration and ZRA tax services.</p>
+ <div class="service-row">
+  <button class="service-card" data-prompt="I want to register a company with PACRA"><span class="service-icon">P</span><span><b>PACRA</b><small>Company registration</small></span><span class="arrow">↗</span></button>
+  <button class="service-card" data-prompt="I need help registering for a TPIN with ZRA"><span class="service-icon zra">Z</span><span><b>ZRA</b><small>Tax & TPIN services</small></span><span class="arrow">↗</span></button>
+ </div>
+</section>
+<section class="workspace">
+ <div class="section-head"><div><span class="eyebrow">YOUR AI SERVICE ASSISTANT</span><h2>How can I help you?</h2></div><span class="online"><i></i> Ready to assist</span></div>
+ <div class="chat" id="chat" aria-live="polite">
+  <div class="message assistant"><div class="avatar">A</div><div class="bubble"><b>Welcome to AMAKA AI.</b><p>You can speak to me naturally. For example:</p><div class="suggestions"><button data-prompt="How do I register a company in Zambia?">“How do I register a company?”</button><button data-prompt="Help me get a TPIN from ZRA">“Help me get a TPIN.”</button><button data-prompt="What taxes does a small business pay?">“What taxes will my business pay?”</button></div><p class="hint">I'll guide you step by step and prepare the information you need.</p></div></div>
+ </div>
+ <div class="composer">
+  <div class="input-wrap"><input id="messageInput" placeholder="Type here if you prefer…" autocomplete="off"><button id="sendBtn" class="send" aria-label="Send">➤</button></div>
+  <button id="micBtn" class="mic" aria-label="Speak"><span class="mic-icon">🎙</span><span><b>Tap to speak</b><small>Voice-first assistant</small></span><kbd>MIC</kbd></button>
+  <div id="voiceStatus" class="voice-status">Tap the microphone and speak in English.</div>
+ </div>
+</section>
+<section class="quick-grid">
+ <div class="section-head"><div><span class="eyebrow">EXPLORE SERVICES</span><h2>What you can do</h2></div></div>
+ <div class="quick-cards">
+  <button data-prompt="I want to register a business name with PACRA"><span>01</span><b>Register a business name</b><small>PACRA · Business name</small></button>
+  <button data-prompt="I want to incorporate a limited company"><span>02</span><b>Incorporate a company</b><small>PACRA · Company</small></button>
+  <button data-prompt="I need a TPIN and tax registration guidance"><span>03</span><b>Get a TPIN</b><small>ZRA · Taxpayer registration</small></button>
+  <button data-prompt="Explain tax obligations for my small business"><span>04</span><b>Understand my taxes</b><small>ZRA · Tax guidance</small></button>
+ </div>
+</section>
+<section class="research-panel">
+ <div class="section-head"><div><span class="eyebrow">VERIFIED SERVICE KNOWLEDGE</span><h2>What the official guidance says</h2></div><span class="online">Source-linked</span></div>
+ <div class="research-grid">
+  <article><b>PACRA · Company</b><p>For a private company limited by shares, PACRA's service guidance describes a Companies Form 3 application, at least two directors, and additional company documents depending on the Articles selected.</p><a href="https://info.pacra.org.zm/what-is-a-local-company/" target="_blank" rel="noopener">PACRA service guidance ↗</a></article>
+  <article><b>PACRA · Fees</b><p>PACRA publishes a live forms-and-fees catalogue. Fees differ by service and may change, so this demo links to the current official catalogue instead of guessing a total.</p><a href="https://pacra.org.zm/fees-and-forms" target="_blank" rel="noopener">Official forms & fees ↗</a></article>
+  <article><b>ZRA · Company TPIN</b><p>ZRA says that for businesses registered with PACRA after 2020, TPIN generation is linked to PACRA registration; check the email for credentials and complete tax-type registration in the ZRA account.</p><a href="https://www.zra.org.zm/business-registration-requirements/" target="_blank" rel="noopener">ZRA business requirements ↗</a></article>
+  <article><b>ZRA · Individual TPIN</b><p>ZRA provides a Get a TPIN route. Its guidance identifies identity and address information/documents that may be required. Requirements depend on taxpayer type.</p><a href="https://www.zra.org.zm/faq/" target="_blank" rel="noopener">ZRA registration FAQ ↗</a></article>
+ </div>
+ <p class="research-caveat">Guidance last checked for this prototype: 21 November 2026. Always verify the live official page before applying or paying.</p>
+</section>
+<section class="trust-note"><span>ⓘ</span><div><b>Prototype transparency</b><p>AMAKA AI is an independent demonstration and is not PACRA or ZRA. Applications, fees and payments are not submitted or processed by this demo. Always confirm current requirements on official government channels.</p><div class="official-links"><a href="https://www.pacra.org.zm/" target="_blank" rel="noopener">Official PACRA ↗</a><a href="https://www.zra.org.zm/" target="_blank" rel="noopener">Official ZRA ↗</a></div></div></section>
+</main>
+<footer>AMAKA AI <span>•</span> BUILT FOR ZAMBIA <span>•</span> DEMONSTRATION V1</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
